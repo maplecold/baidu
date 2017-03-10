@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content/type"content="text/html;charset=utf-8">
+	<title>任务六：通过HTML及CSS模拟报纸排版</title>
+    <style type="text/css">
+    body{margin: 0 auto;padding: 0;width: 980px;height: 1386px;}
+    .top{width: 980px;position: relative;overflow: hidden;margin: 0 44px 0 44px;}
+    .heading{width: 110px;height: 61px;background-color: #d45d5c;float: left;}
+    .heading p{font-size: 12px;color: #ffffff;font-family: "黑体";margin-top: 40px;}
+    .top span{font-size: 12px;color: #d45d5c;font-family: "黑体";position: absolute;top: 40px;right: 88px;}
+    .top hr{width: 892px;height: 2px;background-color: #938e8c;position: absolute;top: 50px;right: 88px;}
+    .section1{width: 980px;position: relative;overflow: hidden;margin: 30px 44px 0 44px;}
+    .section1 .left{float: left;}
+    .section1 .left .red{width: 191px;height: 301px;background-color: red;filter:alpha(opacity=40);opacity:0.4;position: absolute;top: 0;left: 0;}
+    .section1 .left .green{width: 191px;height: 301px;background-color: green;filter:alpha(opacity=40);opacity:0.4;position: absolute;top: 0;left: 450px;}
+    .section1 .right{float: right;}
+    .section1 .right hr{width: 203px;height: 2px;background-color: #cc8091;margin-right: 88px;}
+    .section1 .right h4{font-size: 24px;color: #000000;font-family: "微软雅黑";text-decoration: underline;line-height: 40px;margin-top: 0px;text-transform: uppercase;}
+    .section1 .right h4:first-letter{font-size: 36px;}
+    .section1 .right h5{font-size: 24px;color: #000000;font-family: "微软雅黑";text-decoration: underline;line-height: 40px;margin-top: -30px;text-transform: uppercase;}
+    .section1 .right h5:first-letter{font-size: 36px;}
+    .section1 .right p{font-size: 12px;color: #676767;font-family: "楷体";line-height: 10px;margin-top: -30px;}
+    .section1 .right i{font-size: 116px;color: #75b85b;font-family: "微软雅黑";position: absolute;
+    right: 124px;top: 120px;}
+    .section1 .right .foot1{font-size: 55px;color: #cc8091;font-family: "微软雅黑";position: absolute;
+    top: 240px;}
+    .section1 .right .foot2{color: #cc8091;font-family: "微软雅黑";position: absolute;top: 245px;right: 140px;}
+    .section1 .right .foot2 h3{font-size: 21px;}
+    .section1 .right .foot2 span{font-size: 12px;position: relative;bottom: 30px;}
+    .section2{width: 685px;margin:30px 0 0 44px;}
+    .section2 .left{width: 30%;float: left;margin-right: 30px;}
+    .section2 .middle{width: 30%;float: left;margin-right: 30px;}
+    .section2 .right{width: 30%;float: left;}
+    .section2 .left h4{font-size: 16px;color: #418c59;text-decoration: underline;}
+    .section2 .middle h4{font-size: 16px;color: #d2994f;font-family: "微软雅黑";text-decoration: underline;}
+    .section2 .right h4{font-size: 16px;color: #cc7680;font-family: "微软雅黑";text-decoration: underline;}
+    .section2 .left p{font-size: 12px;line-height: 16px;font-family: "宋体";color: #767777;margin-top: -20px;}
+    .section2 .middle p{font-size: 12px;line-height: 16px;font-family: "微软雅黑";color: #231815;margin-top: -20px; filter:alpha(opacity=70);opacity:70%;}
+    .section2 .right p{font-size: 12px;line-height: 16px;font-family: "微软雅黑";color: #231815;margin-top: -20px; filter:alpha(opacity=70);opacity:70%;}
+    .section2 .right .math span{font-size: 12px;color: #cd4a48;line-height: 16px;font-family: "微软雅黑";opacity:70%;font-style: italic;}
+    .section3{width: 980px;float: left;margin: 30px 44px 0 44px;}
+    .section3 .left{float: left;width: 40%;}
+    .section3 .left h3 strong{font-size: 72px;color: #f5e327;font-family: "黑体";font-style: italic;}
+    .section3 .left b{font-size: 42px;color: #11456b;font-family: "黑体";line-height: 16px;}
+    .section3 .left h4{font-size: 33px;color: #11456b;font-family: "黑体";margin-top: -20px;font-weight: bold;}
+    .section3 .left hr{width: 415px;height: 2px;background-color: black;margin-top: -20px;}
+    .section3 .left p strong{font-size: 70px;color: #f5e327;font-family: "宋体";float: left;text-align: center;}
+    .section3 .left p img{float: right;margin: 5px;text-align: center;}
+    .section3 .right{float:left;margin: 30px 0 44px 44px;}
+    .section3 .right .bottom{width: 458px;height: 61px;background-color: black;filter:alpha(opacity=40);opacity:0.4;margin-top: -70px;}
+    .section3 .right .bottom hr{width: 3px;height: 44px;background-color: #72b16a;position: relative;right: 180px;top:5px;border: none;}
+    .section3 .right .bottom h3{font-size: 26px;font-family: "微软雅黑";position: relative;bottom: 60px;left:60px;color: #ffffff;}
+    .section3 .right .bottom p{font-size: 12px;font-family: "微软雅黑";color: #72b16a;position: relative;bottom: 105px;left:165px;font-style: italic;}
+    .footer{width: 980px;float: left;overflow: hidden;margin: -20px 44px 0 44px;}
+    .footer hr{width: 892px;height: 2px;background-color: #938e8c;position: relative;right: 44px;}
+    .footer span{font-size: 12px;color: #d45d5c;font-family: "黑体";position: relative;left: 814px;bottom: 10px;}
+    .section3 .right .below{width: 459px;height: 318px;background-color: #cccccc;margin-top: 20px;font-size: 16px;color: #5a5b5b;font-family: "宋体";line-height: 20px;position: relative;overflow: hidden;}
+    .section3 .right .below p{position: relative;top: 20px;left: 40px;}
+    .section3 .right .below span{font-size: 12px;color: #5a5b5b;font-family: "宋体";line-height: 20px;font-style: italic;}
+    .section3 .right .below .lower{width: 260px;height: 160px;background-color: #d45d5c;position: absolute;bottom: 0px; }
+    .section3 .right .below .lower h4{font-size: 110px;color: #ffffff;font-family: "微软雅黑";float: left;position: relative;bottom: 75px;}
+    .section3 .right .below .lower hr{width: 2px;height: 86px;background-color: #ffffff;float: left;position: relative;top: 30px;left: 10px;}
+    .section3 .right .below .lower h5{font-size: 21px;color: #ffffff;font-family: "黑体";line-height: 24px;font-style: italic;position: relative;top: 10px;left: 10px;}
+    .section3 .right .below .lower p{font-size: 12px;color: #ffffff;font-family: "黑体";line-height: 12px;
+        position: relative;left: 20px;top: -20px;}
+    .section3 .right .below .stage{float: right;font-size: 14px;color: #5a5b5b;font-family: "黑体";line-height: 16px;font-style: italic;position: absolute;bottom: 40px;right: 20px;}
+    .section3 .right .below .stage b{font-size: 72px;color: #d45d5c;font-family: "黑体";display: block; }
+    .section3 .right .below .stage div{text-indent: 2em;}
+    </style>
+</head>
+<body>
+	<div class="top">
+		<div class="heading">
+			<p>ife.baidu.com</p>
+		</div>
+		<span>2017.03</span>
+		<hr>
+	</div>
+	<div class="section1">
+		<div class="left">
+            <div class="red">
+                
+            </div>
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488786064618&di=6e0b02756d0e687a8ed1f8f58351bb6c&imgtype=0&src=http%3A%2F%2Fi1.letvimg.com%2Fcms%2F201308%2F21%2F7b2133d4b7708f106a4ee64787a9bd7d9904.jpg"width="641px"height="301px">
+            <div class="green">
+                
+            </div>
+		</div>
+		<div class="right">
+			<hr>
+			<h4>ABOUT<br/></h4><h5>TECHONLOGE</h5>
+			<p>About techonloge about techonloge<br/>about techonloge</p>
+			<i>700</i>
+			<span class="foot1">3.2</span>
+			<span class="foot2">
+				<h3>CSS</h3>
+				<span>csscsscsscss</span>
+			</span>
+		</div>
+	</div>
+    <div class="section2">
+    	<div class="left">
+    		<h4>What</h4>
+    		<p>《假面骑士》系列是由石森章太郎首创、东映株式会社制作的日本特摄系列英雄故事，至今共有33位主角骑士。
+            首部《假面骑士》于1971年4月3日播出后，受到各个年龄层观众的喜爱，并引申出更多的假面骑士后续作品。
+            因为石森章太郎于1998年1月28日去世后，东映株式会社所创作的平成假面骑士系列作品均会注明原作“石森章太郎”这个名字来纪念他。</p>
+    	</div>
+    	<div class="middle">
+    		<h4>When</h4>
+    		<p>《假面骑士》系列是由石森章太郎首创、东映株式会社制作的日本特摄系列英雄故事，至今共有33位主角骑士。
+            首部《假面骑士》于1971年4月3日播出后，受到各个年龄层观众的喜爱，并引申出更多的假面骑士后续作品。
+            因为石森章太郎于1998年1月28日去世后，东映株式会社所创作的平成假面骑士系列作品均会注明原作“石森章太郎”这个名字来纪念他。</p>
+    	</div>
+    	<div class="right">
+    		<h4>How</h4>
+    		<p>假面骑士假面骑士<br/><br/>假面骑士假面骑士假面骑士<br/><br/>假面骑士假面骑士</p>
+    		<div class="math">
+    		    What-----------<span>40%</span><br/>
+    			What-----------<span>40%</span><br/>
+    			What-----------<span>30%</span><br/>
+    		</div>
+    	</div>
+    </div>
+    <div class="section3">
+        <div class="left">
+            <h3><strong>THE</strong><b> TECHONLOGE<br/>OF FRONT</b></h3>
+            <h4>前端技术领域</h4>
+            <hr>
+            <p><strong>假</strong>《假面骑士》系列是由石森章太郎首创、东映株式会社制作的日本特摄系列英雄故事，至今共有33位主角骑士。首部《假面骑士》于1971年4月3日播出后，受到各个年龄层观众的喜爱，并引申出更多的假面骑士后续作品。<img src="http://i-7.vcimg.com/crop/7adc2cb0c5559e8bd10052a79bed777b52757(600x)/thumb.jpg"width="145px" height="205px">因为石森章太郎于1998年1月28日去世后，东映株式会社所创作的平成假面骑士系列作品均会注明原作“石森章太郎”这个名字来纪念他。《假面骑士》系列是由石森章太郎首创、东映株式会社制作的日本特摄系列英雄故事，至今共有33位主角骑士。首部《假面骑士》于1971年4月3日播出后，受到各个年龄层观众的喜爱，并引申出更多的假面骑士后续作品。因为石森章太郎于1998年1月28日去世后，东映株式会社所创作的平成假面骑士系列作品均会注明原作“石森章太郎”这个名字来纪念他。《假面骑士》系列是由石森章太郎首创、东映株式会社制作的日本特摄系列英雄故事，至今共有33位主角骑士。</p>
+        </div>
+        <div class="right">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488974872377&di=80c319916bec8de71fa1f80a7d3bb37b&imgtype=0&src=http%3A%2F%2Fp1.qhimg.com%2Ft018bc818b8002406fb.jpg"width="458px"height="275px">
+            <div class="bottom">
+                <hr>
+                <h3>前端技术</h3>
+                <p>前端技术前端技术</p>
+            </div>
+            <div class="below">
+                <p>▲前端前端前端前端前端.....................<span>前端</span><br/></p>
+                <p>▲前端前端前端............................<span>前端前</span><br/></p>
+                <p>▲前端前端前端前端前端前端.................<span>前端</span><br/></p>
+                <div class="lower">
+                    <h4>0</h4>
+                    <hr>
+                    <h5>ONE TWO<br/> THREE FOUR FIVE</h5>
+                    <p>hello world hello world<br/>hello world</p>
+                </div>
+                <div class="stage">
+                    <b style="position:absolute;left:-60px;bottom:50px;">“</b>
+                    <div>world hello world<br/> 
+                    hello world hello world<br/>
+                    hello world hello world<br/>
+                    hello world hello world<br/>
+                    hello world</div>
+                    <b style="position:absolute;right:-30px;bottom:-30px;">”</b>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="footer">
+        <hr>
+        <span>ife.baidu.com</span>
+    </div>
+</body>
+</html>
