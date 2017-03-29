@@ -1,0 +1,92 @@
+body{margin: 0;padding: 0;min-width: 1900px;}
+.top{height: 50px;width: 100%;}
+.top .book1{margin:20px 0 0 50px;padding: 0px;}
+.top p{position: absolute;top: 0px;left: 100px;font-family: "微软雅黑";font-size: 24px;}
+.top .resigter{float:right;font-size: 18px;color: #e65051;clear: both;margin: -55px 60px 0 0;}
+.top ul{float: right;margin-right: 200px;height: 50px;}
+.top li{list-style: none;float: left;margin:10px 0 0 60px;display: inline-block;}
+.top a{text-decoration: none;font-size: 18px;padding-bottom: 29px;}
+.top a:link{color: #938e8c;}
+.top a:visited{color: #938e8c;}
+#on,.top a:hover{color: #e65051;border-bottom: 3px solid #e74f4d;position-bottom: 10px;}
+.section1{height: 900px;width: 100%;margin: 0;padding: 0;position: relative;}
+.section1 .import{position: absolute;top: 200px;left: 220px;}
+.section1 h3{font-size: 64px;color: #ffffff;font-family: "微软雅黑";}
+.section1 .import p{color: #ffffff;font-size: 22px;position: relative;bottom: 60px;}
+.section1 .import input{color: #ffffff;background: #e65051;border: none;width: 330px;height: 65px;
+	font-size: 30px;}
+.section2{height: 350px;width: 1900px;}
+.icon1,.icon2,.icon3,.icon4
+{float: left;width:25%;height: 350px;position: relative;top: 120px;}
+.section2 .icon1 img,.section2 .icon2 img,.section2 .icon3 img,.section2 .icon4 img
+{margin-left: 220px;}
+.section2 .icon1 p,.section2 .icon2 p,.section2 .icon3 p,.section2 .icon4 p
+{font-size: 16px;color: #938e8c;margin-top:80px;text-align: center;}
+.section2 .icon1 hr,.section2 .icon2 hr,.section2 .icon3 hr
+{width: 1px;height: 35px;margin:-45px 0 0 480px;}
+.section3{width: 100%;height: 450px;background: #d2cdcd;}
+.section3 img{position: relative;top: 150px;left: 900px;}
+.section3 p{color: #938e8c;font-size: 48px;margin: 200px 0 0 550px;}
+.section4{height: 450px;width: 100%;}
+.section4 .search{margin:-380px 0 0 800px;}
+.section4 .search span{font-size: 24px;color: #ffffff;}
+.section4 .search p{color: #fff;position: relative;right: 100px;top: 40px;}
+.section4 .search .entry{position: relative;top: 100px;right: 400px;}
+.section4 .search select{width: 220px;height: 35px;margin-right: 50px;color: #938e8c;}
+.section4 .search input{width: 220px;height: 35px;background-color: #e65051;border: none;color: #fff;
+ font-size: 16px;}
+.section4 .search option{color: #938e8c;background-color: #d2cdcd;}
+.section5{width: 100%;height: 700px;}
+.section5 img{margin:150px 0 0 450px;}
+.section6{height: 660px;width: 100%;}
+.section6 .left{width: 70%;height: 660px;float: left;}
+.section6 .right{width: 30%;height: 660px;float: left;}
+.section6 .left .world{position: relative;bottom: 500px;margin-left: 600px;}
+.section6 .left .world span{font-size: 48px;color: #fff;}
+.section6 .left .world h2{font-size: 160px;color: #fff;position: relative;bottom: 180px;right: 120px;}
+.section6 .left .world p{font-size: 24px;position: relative;bottom: 300px;color: #fff;}
+.section6 .right span{font-size: 20px;position: relative;top: 200px;margin-left: 220px;}
+.section6 .right p{font-size: 16px;color: #938e8c;position: relative;top: 200px;margin-left: 60px;}
+.section6 .right i{color: #e65051;}
+.section6 .right input{color: #e65051;width: 99px;height: 36px;background-color: #fff;
+	border: 1px solid #e65051;position: relative;top: 260px;margin-left: 220px;}
+.section7{width: 100%;height: 630px;}
+.section7 .left{width: 35%;height: 630px;background-color: #e65051;float: left;}
+.section7 .middle{width: 35%;height: 630px;float: left;}
+.section7 .right{width: 30%;height: 630px;float: left;}
+.section7 .left p{color: #fff;font-size: 20px;text-align: center;position: relative;top: 180px;text-align: center;}
+.section7 .left hr{width: 45px;height: 2px;background-color: #fff;position: relative;top: 200px;}
+.section7 .left input{width: 180px;height: 45px;color: #fff;background-color: #e65051;
+	font-size: 18px;border: 1px solid #fff;margin-left:240px;position: relative;top: 240px;}
+.section7 .middle p{font-size: 20px;text-align: center;position: relative;top: 180px;text-align: center;}
+.section7 .middle hr{width: 45px;height: 2px;position: relative;top: 200px;background-color:#ccc;}
+.section7 .middle input{width: 180px;height: 45px;background-color: #fff;color:#e65051; 
+	;font-size: 18px;border: 1px solid #e65051;;margin-left:240px;position: relative;top: 240px;}
+.section8{width: 100%;height: 850px;}
+.section8 .spire{width: 100%;height: 360px;}
+.section8 .spire h3{text-align: center;position: relative;top: 140px;}
+.section8 .spire hr{width: 45px;height: 2px;position: relative;top: 140px;background-color:#e65051;}
+.section8 .spire p{text-align: center;position: relative;top: 140px;font-size: 14px;color: #938e8c;}
+.section8 .down{width: 100%;height: 490px;}
+.section8 .down .left{width: 30%;height: 490px;float: left;margin-left: 190px;}
+.section8 .down .left p{color:#938e8c;}
+.section8 .down .left span{margin-left: 320px;}
+.section8 .down .right{width: 50%;height: 490px;float: right;margin-right: 190px;margin-top: 50px;}
+.section8 .down .right .name{width: 360px;height: 35px;background-color: #ccc;border: 0;}
+.section8 .down .right .age{width: 360px;height: 35px;background-color: #ccc;border: 0;}
+.section8 .down .right .way{width: 360px;height: 35px;background-color: #ccc;border: 0;}
+.section8 .down .right .address{width: 360px;height: 35px;background-color: #ccc;border: 0;}
+.section8 .down .right .submit{width: 725px;height: 35px;background-color: #ccc;border: 0;}
+.section8 .down .right textarea{width: 720px;height: 120px;resize:none;background-color: #ccc;border: 0;}
+.section9{background-color: #33363f;width: 100%;height: 460px;}
+.section9 h3{text-align: center;color: #fff;font-size: 24px;position: relative;top: 120px;}
+.section9 p{text-align: center;color: #fff;position: relative;top: 120px;}
+.section9 .text{margin-left: 650px;width: 600px;height: 35px;position: relative;
+	top: 140px;border: 0;font-size: 16px;color: #938e8c;}
+.section9 .submit{position: relative;top: 142px;right:105px;background-color: #6f7178;border: 0;
+	width: 100px;height: 38px;font-size: 16px;color: #fff;cursor: pointer;}
+.section9 img{position: relative;top: 220px;right: 520px;margin-right: 30px;}
+.low{width: 100%;height: 160px;background-color: #2f3039;}
+.low span{color: #fff;position: relative;top: 80px;margin-left: 200px;}
+.low a{color: #fff;text-decoration: none;float: right;position: relative;top: 80px;margin-right: 100px;}
+
